@@ -5,7 +5,7 @@ import Greeting from './components/greetings';
 function App() {
   return (
     <Router>
-      <h1>My App1</h1>
+      <h1>My App</h1>
       <Routes>
         <Route path="/" element={<Greeting />} />
       </Routes>

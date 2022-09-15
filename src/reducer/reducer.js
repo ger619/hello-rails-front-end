@@ -9,10 +9,10 @@ const addGreets = (greeting) => ({
 
 export const fetchGreeting = () => async (dispatch) => {
   try {
-    const greets = await Axios.get('http://127.0.0.1:3000/api/v1/hello/', { mode: 'cors' });
-    console.log(greets.data);
+    const greets = await Axios.get('http://127.0.0.1:3000/api/v1/hello/');
     dispatch(addGreets(greets.data));
   } catch (err) {
+    // eslint-disable-next-line
     console.log(err);
   }
 };
